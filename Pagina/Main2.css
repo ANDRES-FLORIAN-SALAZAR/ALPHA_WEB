@@ -26,14 +26,17 @@ color: #ffffff;
 
 ul li {
     margin-bottom: 10px;
+    
 }
 
 ol {
     padding-left: 20px;
+    color: #ffffff;
 }
 
 mark {
-    background-color: #00aeff8c;
+    background-color:#d400ff;
+    color: #ffffff;
 }
 
 form input[type="text"],
