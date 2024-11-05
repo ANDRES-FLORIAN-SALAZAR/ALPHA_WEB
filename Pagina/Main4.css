@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #f8f7f7;
-    background-image: url("../Imagenes/Fondo.jpg");
+    background-image: url("../Imagenes/Planes.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,6 +19,7 @@ form {
     width: 100%;
     box-shadow: 0px 0px 65px;
     margin-top: 50px;
+    border-radius: 20px;
 }
 
 input, textarea, select {
@@ -34,7 +35,7 @@ input, textarea, select {
     margin: 8px 0px;
 }
 
-fieldset {
+fieldset{
     margin-top: 20px;
     border: 1px solid #f1efef;
     border-radius: 5px;
@@ -52,4 +53,9 @@ legend {
     bottom: 10;
     position: center;
     width: 100%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
 }

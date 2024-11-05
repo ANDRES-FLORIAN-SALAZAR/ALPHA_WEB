@@ -1,37 +1,38 @@
-from flask import Flask, render_template, request, redirect, url_for
-from pymongo import MongoClient
+from flask import Flask, request
+from flask_pymongo import PyMongo
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
+app.config["MONGO_URI"] = "mongodb://localhost/ALPHA_WEB"
+mongo = PyMongo(app)
+
+@app.route("/users", methods=["POST"])
+def create_users():
+    # Recibir datos
+    username = request.json["username"]
+    password = request.json["password"]
+    email = request.json["email"]
+    
+    if username and email and password:
+        hashed_password = generate_password_hash(password)
+        id = mongo.db.users.insert_one(
+            {"username": username,
+            "email": email,
+            "password": hashed_password}
+        ).inserted_id
+        response = {
+            "id": str(id),
+            "username": username,
+            "password": password,
+            "email": email
+        }
+        
+        return response
+    
+    else:
+        return {"message": "received"}, 400
 
 # Conexión a MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['registroDB']
-registros = db['registros']
-
-@app.route('/')
-def index():
-    return render_template('registro.html')
-
-@app.route('/registro', methods=['POST'])
-def registro():
-    nombre = request.form.get('nombre')
-    apellido = request.form.get('apellido')
-    edad = request.form.get('edad')
-    genero = request.form.get('genero')
-    email = request.form.get('email')
-    telefono = request.form.get('telefono')
-
-    nuevo_registro = {
-        'nombre': nombre,
-        'apellido': apellido,
-        'edad': edad,
-        'genero': genero,
-        'email': email,
-        'telefono': telefono
-    }
-
-    registros.insert_one(nuevo_registro)
-    return redirect(url_for('index'))
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
+
