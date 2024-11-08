@@ -30,7 +30,7 @@ def create_users():
         return response
     
     else:
-        return {"message": "received"}, 400
+        return {"message": "received"}
 
 # Conexión a MongoDB
 if __name__ == "__main__":
