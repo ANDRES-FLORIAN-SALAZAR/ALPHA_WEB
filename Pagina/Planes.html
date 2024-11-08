@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="Main2.css" rel="stylesheet">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <div>
-            <h1 class="planes"><hr><em>PLANES</em></h1><hr>
+<html lang="es">
+<head>
+    <link href="Main2.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
 
-            <ul style="list-style-image:url(../Imagenes/stock.jpg);">
-                <li><strong><h3>Planes Personales</h3></strong></li><br>
-                <li><strong><h3>Planes Business</h3></strong></li><br>
-                <li><strong><h3>Departamento de Ventas</h3></strong></li><br>
-            </ul>
-    
-            <h3><hr>Lista de Precios</h3>
-    
-            <ol style="list-style-type: circle">
-                <li><h3><mark>Plan_Business=$50.000</mark></h3></li>
-                <li><h3><mark>Plan_Teams=$100.000</mark></h3></li>
-                <li><h3><mark>Plan_Families=$100.000</mark></h3></li>
-                <li><h3><mark>Plan_Premium=$150.000</mark></h3></li>
-            </ol>
-            
-            <form action="ALPHA_WEB/Imagenes/Fondo.jpg" name="Informacion ALPHA WEB" method="get">
-                <hr><h3>Nombre <input type="text" placeholder="Ingresa tu Nombre" required><br><br></h3>
-                <h3>Correo <input type="text" placeholder="Ingresa tu Correo"><br><br></h3>
-                <h3>Numerico <input type="checkbox"><br><br></h3>
-                <h3>Alfabetico <input type="checkbox"><br><br></h3>
-                <h3>Contraseña <input type="password" placeholder="Ingresa tu Contraseña"><br><br></h3>
-                <h3>Verificacion <br><input type="file"><br><hr></h3>
-    
-                <h3>Escoje Nuestros Planes:</h3>
-                <select>
-                    <option>Plan Business</option>
-                    <option>Plan Teams</option>
-                    <option>Plan Families</option>
-                    <option>Plan Premium</option>
-                </select> <br><br><hr>
+    <div class="navbar">
+
+        <a href="Pagina Principal.html">Inicio</a>
+        <a href="Registro.html">Registrate</a>
+        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
             </form>
         </div>
-        <center><div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div></center>
-    </body>
+    </div>
+
+    <div>
+        <h1 class="planes"><em>PLANES</em></h1><hr>
+
+        <ul style="list-style-image:url(../Imagenes/stock.jpg);">
+        <li><strong><h3>Planes Personales</h3></strong></li><br>
+        <li><strong><h3>Planes Business</h3></strong></li><br>
+        <li><strong><h3>Departamento de Ventas</h3></strong></li><br>
+        </ul>
+
+        <h3><hr>Lista de Precios</h3>
+
+        <ol style="list-style-type: circle">
+            <li><h3><mark>Plan_Business=$50.000</mark></h3></li>
+            <li><h3><mark>Plan_Teams=$100.000</mark></h3></li>
+            <li><h3><mark>Plan_Families=$100.000</mark></h3></li>
+            <li><h3><mark>Plan_Premium=$150.000</mark></h3></li>
+        </ol>
+        
+        <form action="ALPHA_WEB/Imagenes/Fondo.jpg" name="Informacion ALPHA WEB" method="get">
+            <hr><h3>Nombre <input type="text" placeholder="Ingresa tu Nombre" required><br><br></h3>
+            <h3>Correo <input type="text" placeholder="Ingresa tu Correo"><br><br></h3>
+            <h3>Numerico <input type="checkbox"><br><br></h3>
+            <h3>Alfabetico <input type="checkbox"><br><br></h3>
+            <h3>Contraseña <input type="password" placeholder="Ingresa tu Contraseña"><br><br></h3>
+            <h3>Verificacion <br><input type="file"><br><hr></h3>
+
+            <h3>Escoje Nuestros Planes:</h3>
+            <select>
+                <option>Plan Business</option>
+                <option>Plan Teams</option>
+                <option>Plan Families</option>
+                <option>Plan Premium</option>
+            </select> <br><br>
+        </form>
+    </div>
+    <center>
+        <br><br><div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div></center>
+</body>
 </html>

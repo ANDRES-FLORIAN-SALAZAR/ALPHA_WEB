@@ -5,20 +5,55 @@
         <Link href="Main.css" rel="stylesheet">
         <meta charset="UTF-8">
     </head>
+    
     <body>
-        <div>
-            <h1 class="Inicial"><em> INICIO </h1></em>
-        <center><hr><img id="ALPHAWEB" src="../Imagenes/Logo.jpg"alt="Logo" height="800" width="800"><hr><br><br></center>
+
+        <div class="navbar">
+
+            <a href="Planes.html">Nuestros Planes</a>
+            <a href="Registro.html">Registrate</a>
+            <a href="Inicio_Sesión.html">Iniciar Sesión</a>
+            
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="content">
+            <center>
+                <img id="ALPHAWEB" src="../Imagenes/Logo.jpg" alt="Logo" height="800" width="800">
+                <hr>
+            </center>
+            
+            <center>
+            <p>MISIÓN</p>
+            <p><h4>Nuestra misión es brindar soluciones tecnológicas innovadoras y accesibles que mejoren la calidad de vida de las personas.<br> 
+            Nos esforzamos por ofrecer productos y servicios de alta calidad que permitan a nuestros usuarios alcanzar sus objetivos de manera eficiente y efectiva.</h4></p>
+
+            <P>VISIÓN</P>
+            <p><h4>Nuestra visión es ser líderes en el mercado de tecnología, reconocidos por nuestra dedicación a la innovación y la excelencia.<br>
+            Aspiramos a crear un futuro donde la tecnología esté al alcance de todos y sea una herramienta esencial para el progreso y el bienestar global.</h4></p>
+
+            <P>¿QUIÉNES SOMOS?</P>
+            <p><h4>Somos ALPHA WEB, una empresa apasionada por la tecnología y su impacto positivo en el mundo.<br>
+            Nuestro equipo está formado por profesionales comprometidos con la excelencia y la innovación.<br>
+            Desde nuestra fundación, nos hemos dedicado a desarrollar soluciones tecnológicas que faciliten la vida de nuestros usuarios y contribuyan al desarrollo de una sociedad más conectada y eficiente.</h4></p><hr>
+            <br><br><br></center>
+
+            <center>
+            <video controls autoplay muted src="../Videos/ALPHA_WEB.mp4" alt="este video es informativo"></video>
+            <track src="ALPHA_WEB.vtt" default kind="fondo" srclang="es" label="español (latinoamerica)"> <!--estos es para los subtitulos-->
+            </center>
         
-        <a href="Planes.html" target="_blank"> <h1 id="Precios">NUESTROS PLANES</h1></a>
-        <p>Para ti y tu familia traemos los mejores planes escoge entre nuestros planes los planes que mejor se acomoden a ti.</p>
-        <a href="Registro.html" target="_blank"><h1 id="Personal">INFORMATE</h1>
-        <a href="Inicio_Sesión.html" target="_blank"><h1 id="Sesión">INISIAR_SESIÓN</h1>
-
-        <br><h1 class="Inicial"><a href="#ALPHAWEB">ALPHA WEB</a></h1>
-        <br><center><div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div></center>
-
-        </div> 
+            <h1 class="Inicial"><a href="#ALPHAWEB">ALPHA WEB</a></h1>
+            <br>
+            <center>
+                <div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div>
+            </center>
+        </div>
     </body>
 
 </html>

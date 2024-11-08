@@ -1,24 +1,66 @@
-body{background-image: url("../Imagenes/Fondo.jpg");
-background-size: cover; 
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-
 .Inicial,.Final{text-align: center;}
 
-h1{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 25px;
-text-align: center; 
-}
-    
 .Inicial,.Final{font-family: "Nerko One", cursive;
-font-weight: 400;
-font-style: normal;
-color: #ccc;
+    font-weight: 400;
+    font-style: normal;
+    color: #ccc;
+    }
+
+body {background-image:url("../Imagenes/Fondo.jpg");
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color:#ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color:  #000000;
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #333;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.search-container button:hover {
+    background: #ddd;
+    color: #000000;
 }
 
 img{
-width: 800px;
+width: 300px;
+height: 300px;
 border-width: 15px;
 border-color:#0000;
 border-style:inset
@@ -28,9 +70,14 @@ p{list-style: none;
 text-align: center;
 line-height: 1.4;
 font-size: 25px;
-text-shadow: 0 0 10px #e90d0d;
+text-shadow: 0 0 10px #0de91f;
 color: #ffffff;
 }
+
+h1{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center; 
+    }
 
 h3{list-style: none;
 text-align: left;
@@ -39,3 +86,18 @@ font-size: 25px;
 text-shadow: 0 0 10px #e90d0d;
 color: #ffffff;
 }
+
+h4{list-style: none;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    text-shadow: 0 0 10px #000202;
+    color: #ffffff;
+    }
+
+video{
+    width: 1480px;
+    height: 720px;
+    background-color: #000000;
+}
+
