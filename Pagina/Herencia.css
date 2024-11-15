@@ -1,0 +1,12 @@
+body{
+    color: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div{
+    color: grey;
+}
+
+h1{
+    color: initial;
+}

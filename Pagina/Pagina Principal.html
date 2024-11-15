@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <link href="Main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+<body>
 
-    <head>
-        <Link href="Main.css" rel="stylesheet">
-        <meta charset="UTF-8">
-    </head>
-    
-    <body></body>
-
-        <div class="navbar">
-
-            <a href="Planes.html">Nuestros Planes</a>
-            <a href="Registro.html">Registrate</a>
-            <a href="Inicio_Sesión.html">Iniciar Sesión</a>
-            
-            <div class="search-container">
-                <form action="/search" method="get">
-                    <input type="text" placeholder="Buscar..." name="search">
-                    <button type="submit">Buscar</button>
-                </form>
-            </div>
+    <div class="navbar">
+        <a href="Planes.html">Nuestros Planes</a>
+        <a href="Registro.html">Registrate</a>
+        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
         </div>
-    
-        <div class="content">
-            <center>
-                <img id="ALPHAWEB" src="../Imagenes/Logo.jpg" alt="Logo" height="800" width="800">
-                <hr>
-            </center>
-            
-            <center>
+    </div>
+
+    <div class="content">
+        <center>
+            <img id="ALPHAWEB" src="../Imagenes/Logo.jpg" alt="Logo" height="800" width="800">
+            <hr>
+        </center>
+        
+        <center>
             <p>MISIÓN</p>
             <p><h4>Nuestra misión es brindar soluciones tecnológicas innovadoras y accesibles que mejoren la calidad de vida de las personas.<br> 
             Nos esforzamos por ofrecer productos y servicios de alta calidad que permitan a nuestros usuarios alcanzar sus objetivos de manera eficiente y efectiva.</h4></p>
 
-            <P>VISIÓN</P>
+            <p>VISIÓN</p>
             <p><h4>Nuestra visión es ser líderes en el mercado de tecnología, reconocidos por nuestra dedicación a la innovación y la excelencia.<br>
             Aspiramos a crear un futuro donde la tecnología esté al alcance de todos y sea una herramienta esencial para el progreso y el bienestar global.</h4></p>
 
-            <P>¿QUIÉNES SOMOS?</P>
+            <p>¿QUIÉNES SOMOS?</p>
             <p><h4>Somos ALPHA WEB, una empresa apasionada por la tecnología y su impacto positivo en el mundo.<br>
             Nuestro equipo está formado por profesionales comprometidos con la excelencia y la innovación.<br>
             Desde nuestra fundación, nos hemos dedicado a desarrollar soluciones tecnológicas que faciliten la vida de nuestros usuarios y contribuyan al desarrollo de una sociedad más conectada y eficiente.</h4></p><hr>
-            <br><br><br></center>
+            <br><br><br>
+        </center>
 
-            <center>
+        <center>
             <video controls autoplay muted src="../Videos/ALPHA_WEB.mp4" alt="este video es informativo"></video>
-            <track src="ALPHA_WEB.vtt" default kind="fondo" srclang="es" label="español (latinoamerica)"> <!--estos es para los subtitulos-->
-            </center>
-        
-            <h1 class="Inicial"><a href="#ALPHAWEB">ALPHA WEB</a></h1>
-            <br>
-            <center>
-                <div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div>
-            </center>
-        </div>
-    </body>
+            <track src="ALPHA_WEB.vtt" default kind="fondo" srclang="es" label="español (latinoamerica)"> 
+            </track>
+        </center>
+        <br>
+    </div>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Sobre Nosotros</h2>
+                <div class="text">ALPHA WEB es una empresa dedicada a brindar soluciones tecnológicas innovadoras para mejorar la calidad de vida.</div>
+            </div>
+            
+            <div class="footer-column">
+                <div class="cont">Enlaces Rápidos</div>
+                <ul class="inf">
+                    <li><a href="Pagina Principal.html">Inicio</a></li>
+                    <li><a href="Planes.html">Nuestros Planes</a></li>
+                    <li><a href="Registro.html">Registro</a></li></h1>
+                    <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="ext">Contacto</div><br><br><br>
+                <div class="text">Email: info@alphaweb.com</div>
+                <div class="text">Teléfono: +57 3143757171</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ALPHA WEB. Todos los derechos reservados.</p>
+            <h1 class="Inicial"><a href="#ALPHAWEB">ALPHA WEB</a></h1>
+        </div>
+    </footer>
+</body>
 </html>
+
