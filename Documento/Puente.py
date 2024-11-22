@@ -1,38 +1,31 @@
-from flask import Flask, request
-from flask_pymongo import PyMongo
-from werkzeug.security import generate_password_hash, check_password_hash
+from flask import Flask, render_template, request, redirect
+import sqlite3
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost/ALPHA_WEB"
-mongo = PyMongo(app)
 
-@app.route("/users", methods=["POST"])
-def create_users():
-    # Recibir datos
-    username = request.json["username"]
-    password = request.json["password"]
-    email = request.json["email"]
-    
-    if username and email and password:
-        hashed_password = generate_password_hash(password)
-        id = mongo.db.users.insert_one(
-            {"username": username,
-            "email": email,
-            "password": hashed_password}
-        ).inserted_id
-        response = {
-            "id": str(id),
-            "username": username,
-            "password": password,
-            "email": email
-        }
-        
-        return response
-    
-    else:
-        return {"message": "received"}
+# Ruta principal para mostrar el formulario de registro
+@app.route('/')
+def registro():
+    return render_template('registro.html')
 
-# Conexión a MongoDB
-if __name__ == "__main__":
+# Ruta para manejar la solicitud POST del formulario
+@app.route('/registro', methods=['POST'])
+def registro_post():
+    nombre = request.form['nombre']
+    apellido = request.form['apellido']
+    edad = request.form['edad']
+    genero = request.form['genero']
+    email = request.form['email']
+    telefono = request.form['telefono']
+
+    # Conectar a la base de datos y guardar la información
+    with sqlite3.connect('database.db') as con:
+        cur = con.cursor()
+        cur.execute("INSERT INTO usuarios (nombre, apellido, edad, genero, email, telefono) VALUES (?, ?, ?, ?, ?, ?)",
+                    (nombre, apellido, edad, genero, email, telefono))
+        con.commit()
+    
+    return redirect('/')
+
+if __name__ == '__main__':
     app.run(debug=True)
-

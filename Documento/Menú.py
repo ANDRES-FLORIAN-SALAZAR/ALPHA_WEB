@@ -11,7 +11,7 @@ def mostrar_menu():
 # Función para mostrar las instrucciones
 def ver_instrucciones():
     print("Instrucciones:")
-    print("1. Selecciona 'Crear contraseña personalizada' para generar una contraseña especificando la cantidad de números, letras minúsculas, mayúsculas y símbolos.")
+    print("1. Selecciona 'Crear contraseña personalizada' para generar una contraseña especificando la cantidad de números,letras minúsculas, mayúsculas y símbolos.")
     print("2. Selecciona 'Crear contraseña aleatoria' para generar una contraseña sin especificaciones.")
     print("3. Sigue las indicaciones en pantalla para personalizar tu contraseña.")
     print("4. Selecciona 'Salir' para terminar el programa.")
@@ -33,7 +33,7 @@ def crear_contraseña_personalizada():
 # Función para crear una contraseña aleatoria
 def crear_contraseña_aleatoria():
     characters = int(input("El número máximo de caracteres es 20: "))
-    final_password = crear_contraseña(characters, characters//4, characters//4, characters//4, characters//4) # Valida la cantidad de varibles que se creo
+    final_password = crear_contraseña(characters, characters//4, characters//4, characters//4, characters//4)# Valida la cantidad de varibles que se creo
     if final_password:
         print(f"Tu contraseña es: {final_password}")
     else:
