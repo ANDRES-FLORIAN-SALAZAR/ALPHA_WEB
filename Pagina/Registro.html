@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title> Registro </title>
-    <link href="Main3.css" rel="stylesheet">
+    <title>Registro</title>
+    <link href="/static/Main3.css" rel="stylesheet">
 </head>
-
 <body>
-
     <div class="navbar">
-        
-        <a href="Pagina Principal.html">Inicio</a>
-        <a href="Planes.html">Nuestros Planes</a>
-        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
-
+        <a href="/">Inicio</a>
+        <a href="/planes">Nuestros Planes</a>
+        <a href="/inicio_sesion">Iniciar Sesión</a>
         <div class="search-container">
             <form action="/search" method="get">
                 <input type="text" placeholder="Buscar..." name="search">
@@ -27,7 +22,7 @@
     <center>
         <form action="/registro" method="post">
             <fieldset>
-                <legend> INFORMACIÓN BÁSICA </legend>
+                <legend>INFORMACIÓN BÁSICA</legend>
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <input type="text" name="apellido" placeholder="Apellido" required>
                 <input type="number" name="edad" placeholder="Edad" required>
@@ -37,13 +32,11 @@
                     <option value="Femenino">Femenino</option>
                 </select>
             </fieldset>
-
             <fieldset>
-                <legend>INFORMACIÓN DE CONTACTO </legend>
+                <legend>INFORMACIÓN DE CONTACTO</legend>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="text" name="telefono" placeholder="Teléfono" required>
             </fieldset>
-            
             <br><input type="submit" value="Enviar Ahora">
         </form>
         
@@ -51,6 +44,4 @@
         <div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div>
     </center>
 </body>
-
 </html>
-
