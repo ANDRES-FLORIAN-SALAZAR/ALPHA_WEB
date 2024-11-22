@@ -1,0 +1,22 @@
+.lista{
+    border: 2px solid #000;
+}
+
+.ingredientes{
+    color: grey;
+    margin: 10px 0;
+    list-style: square;
+}
+
+.ingrediente-importante{
+    color: rgb(237, 249, 19);
+    margin: 10px 0;
+    list-style: square;
+}
+
+.ingrediente-dañino{
+    color: red;
+    margin: 10px 0;
+    list-style: square;
+}
+

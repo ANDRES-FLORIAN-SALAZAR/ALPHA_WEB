@@ -97,7 +97,13 @@ h3 {
     color: #ffffff;
 }
 
-
+p{list-style: none;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 25px;
+    text-shadow: 0 0 10px #0de91f;
+    color: #ffffff;
+}
 
 ul li {
     margin-bottom: 10px;
@@ -109,7 +115,7 @@ ol {
 }
 
 mark {
-    background-color: #d400ff;
+    background-color: #c57777;
     color: #ffffff;
 }
 
