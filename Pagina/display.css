@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+
+div{
+    padding: 20px;
+    background-color: #9996;
+}
+
+a{
+    background-color: rgb(228, 132, 132);
+    color: black;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 5px;
+    display: block;
+}
+
+p{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+}
+
+.nav{
+    background-color: aquamarine;
+}
+
+.nav__list{
+    margin: 0;
+}
+
+.nav__item{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav__link{
+    display: inline-block;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.nav__item:hover{
+    background-color: rgb(195, 235, 16, 0.267);
+}
