@@ -1,7 +1,7 @@
 import sqlite3
 
 # Crear conexión a la base de datos
-conn = sqlite3.connect('database.db')
+conn = sqlite3.connect('BASEDATOS/database.db')
 print("Base de datos abierta con éxito")
 
 # Crear tabla
@@ -17,5 +17,4 @@ CREATE TABLE IF NOT EXISTS usuarios (
 );
 ''')
 print("Tabla creada con éxito")
-conn.close()
-
+conn.close()#
