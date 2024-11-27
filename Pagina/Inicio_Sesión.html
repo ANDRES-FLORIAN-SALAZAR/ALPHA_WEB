@@ -14,7 +14,6 @@
         
         <a href="Pagina Principal.html">Inicio</a>
         <a href="Planes.html">Nuestros Planes</a>
-        <a href="Registro.html">Registrate</a>
     
         <div class="search-container">
             <form action="/search" method="get">
@@ -27,18 +26,19 @@
     <center>
         <form action="/login" method="post">
             <fieldset>
-                <br><center><legend>INICIO DE SESIÓN</legend></center><br>
-                <br><img src="../Imagenes/contrasena.jpg" alt="Usuario"><br><br>
+                <br><center><legend>INICIO DE SESIÓN</legend></center>
+                <br><img src="../Iconos/contrasena.jpg" alt="Usuario"><br><br>
                 <input type="text" name="username" placeholder="Usuario" required>
-                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="password" name="contraseña" placeholder="contraseña" required>
+                <input type="button" value="Inicio Sesión" onclick="window.location.href='Planes.html'">
+                <input type="button" value="Registrarse" onclick="window.location.href='Registro.html'">
             </fieldset>
-            
-            <br><input type="submit" value="Iniciar Sesión"><br>
         </form>
         
         <br><br><br><br><br><br><br>
         <div class="Final">© Copyright - ALPHAWEB <a target="_blank" rel="noopener"></a></div>
     </center>
+
 </body>
 
 </html>

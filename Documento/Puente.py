@@ -19,7 +19,7 @@ def registro_post():
     telefono = request.form['telefono']
 
     # Conectar a la base de datos y guardar la información
-    with sqlite3.connect('database.db') as con:
+    with sqlite3.connect('BASEDATOS/database.db') as con:
         cur = con.cursor()
         cur.execute("INSERT INTO usuarios (nombre, apellido, edad, genero, email, telefono) VALUES (?, ?, ?, ?, ?, ?)",
                     (nombre, apellido, edad, genero, email, telefono))

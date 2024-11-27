@@ -8,9 +8,7 @@
 
     <div class="navbar">
 
-        <a href="Pagina Principal.html">Inicio</a>
         <a href="Registro.html">Registrate</a>
-        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
         
         <div class="search-container">
             <form action="/search" method="get">
@@ -19,54 +17,106 @@
             </form>
         </div>
     </div>
-
     <h1><em>PLANES</em></h1><hr>
     
     <div class="items">
         
-        <ul style="list-style-image:url(../Imagenes/stock.jpg);">
-        <li><strong><h3>Planes Personales</h3></strong></li><br>
-        <li><strong><h3>Planes Business</h3></strong></li><br>
-        <li><strong><h3>Departamento de Ventas</h3></strong></li><br>
+        <ul style="list-style-image:url(../Iconos/stock.jpg);">
+        <li><strong><h3>Planes Personales</h3></strong></li>
+        <h4>Nuestros Planes Personales están diseñados para individuos que buscan maximizar su productividad y organización diaria. 
+            Con herramientas intuitivas y accesibles, estos planes proporcionan soluciones personalizadas para gestionar tareas, 
+            almacenar información de manera segura y mantenerse conectado en todo momento. Perfectos para estudiantes, 
+            profesionales independientes y cualquier persona que quiera llevar su eficiencia al siguiente nivel. 
+            Disponemos del Plan Personal, el Plan Teams ideal para pequeños equipos y proyectos colaborativos, 
+            y el Plan Familiar pensado para hogares modernos que necesitan mantenerse conectados y organizados.</h4>
+        <li><strong><h3>Planes Empresariales</h3></strong></li>
+        <h4>Para las empresas que buscan soluciones eficientes y escalables, nuestros Planes Empresariales ofrecen herramientas avanzadas de colaboración,
+            seguridad de alto nivel y soporte técnico especializado. Ideales para optimizar la productividad y gestionar proyectos empresariales con éxito,
+            estos planes garantizan un rendimiento óptimo y la máxima seguridad para tus operaciones críticas. 
+            Ofrecemos el Plan Business para empresas en crecimiento y el Plan Premium, 
+            que ofrece lo mejor en tecnología y servicios para las empresas más exigentes.</h4>
         </ul>
     </div>
-
-    <div>
-
-        <h3><hr>Lista de Precios</h3>
-
+    
+    <h3><hr><center>Lista de Precios</h3></center><br>
+    
+    <div class="Planes">
         <ol style="list-style-type: circle">
-            <li><h3><mark>Plan_Business=$50.000</mark></h3></li>
-            <li><h3><mark>Plan_Teams=$100.000</mark></h3></li>
-            <li><h3><mark>Plan_Families=$100.000</mark></h3></li>
-            <li><h3><mark>Plan_Premium=$150.000</mark></h3></li>
-        </ol>
-        
-        <form action="ALPHA_WEB/Imagenes/Fondo.jpg" name="Informacion ALPHA WEB" method="get">
-            <hr><h3>Nombre <input type="text" placeholder="Ingresa tu Nombre" required><br><br></h3>
-            <h3>Correo <input type="text" placeholder="Ingresa tu Correo"><br><br></h3>
-            <h3>Numerico <input type="checkbox"><br><br></h3>
-            <h3>Alfabetico <input type="checkbox"><br><br></h3>
-            <h3>Contraseña <input type="password" placeholder="Ingresa tu Contraseña"><br><br></h3>
-            <h3>Verificacion <br><input type="file"><br><br><br></h3>
 
-            <h3>Escoje Nuestros Planes:</h3>
-            <select>
-                <option>Plan Business</option>
-                <option>Plan Teams</option>
-                <option>Plan Families</option>
-                <option>Plan Premium</option>
-            </select> <br><br><br><hr>
+            <strong><h3>Planes Personales</h3></strong></li><br>
+
+            <div class="card-container"> 
+                <div class="card"> <div class="content"> 
+                    <div class="title">Plan Personal</div>
+                    <img src="../iconos/usuario.jpg" alt="Business Plan Image" class="imagen">
+                    <div class="price">$33,999</div> 
+                    <div class="description">El Plan Personal está diseñado para individuos que buscan maximizar su productividad y organización diaria.
+                        Con herramientas intuitivas y accesibles, este plan proporciona soluciones personalizadas para gestionar tareas, 
+                        almacenar información de manera segura y mantenerse conectado en todo momento. Perfecto para estudiantes, 
+                        profesionales independientes y cualquier persona que quiera llevar su eficiencia al siguiente nivel.</div> 
+                    </div> 
+                    <button>Buy now</button> 
+                </div>
+
+                <div class="card"> 
+                        <div class="content"> 
+                            <div class="title">Plan Teams</div>
+                            <img src="../iconos/teams.jpg" alt="Business Plan Image" class="imagen"> 
+                            <div class="price">$100,000</div> 
+                            <div class="description">El Plan Teams es perfecto para pequeños equipos y proyectos colaborativos. 
+                                Proporciona herramientas de comunicación y gestión de tareas que facilitan la coordinación y el trabajo en conjunto, 
+                                asegurando que todos los miembros del equipo estén alineados y sean productivos.</div> 
+                </div> <button>Buy now</button>
+
+                </div> <div class="card"> 
+                    <div class="content"> 
+                        <div class="title">Plan Familiar</div>
+                        <img src="../iconos/families.jpg" alt="Business Plan Image" class="imagen"> 
+                        <div class="price">$150,000</div> 
+                        <div class="description">Nuestro Plan Familiar está pensado para hogares modernos que necesitan mantenerse conectados y organizados. 
+                            Incluye servicios de almacenamiento compartido, aplicaciones de gestión de tiempo y herramientas de seguridad familiar, 
+                            todo lo necesario para simplificar la vida diaria de tu familia.</div> 
+                    </div> 
+                    <button>Buy now</button> 
+                </div> 
+            </div><br>
+
+            <strong><h3>Planes Business</h3></strong></li><br>
+            <div class="card-container"> 
+                <div class="card"> 
+                    <div class="content"> 
+                        <div class="title">Plan Business</div>
+                        <img src="../iconos/business.jpg" alt="Business Plan Image" class="imagen"> 
+                        <div class="price">$200,000</div> 
+                        <div class="description">Nuestro Plan Business está diseñado para empresas que buscan soluciones eficientes y escalables. 
+                            Incluye herramientas avanzadas de colaboración, 
+                            seguridad de alto nivel y soporte técnico especializado, 
+                            ideal para optimizar la productividad y gestionar proyectos empresariales con éxito.</div> 
+                    </div> 
+                    <button>Buy now</button> 
+                </div> <div class="card"> 
+                    <div class="content"> 
+                        <div class="title">Plan Premium</div>
+                        <img src="../iconos/premium.jpg" alt="Business Plan Image" class="imagen"> 
+                        <div class="price">$500,000</div> 
+                        <div class="description">El Plan Premium ofrece lo mejor en tecnología y servicios para empresas exigentes. 
+                            Con prestaciones avanzadas, soporte prioritario y una infraestructura robusta, 
+                            garantiza un rendimiento óptimo y la máxima seguridad para tus operaciones críticas.</div> 
+                    </div> 
+                    <button>Buy now</button> 
+                </div> 
+            </div><br>
+        </ol><hr>
+        <form action="ALPHA_WEB/Imagenes/Fondo.jpg" name="Informacion ALPHA WEB" method="get">
+            
         </form>
         </div>
-
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-column">
                     <h2>Sobre Nosotros</h2>
                     <div class="text">ALPHA WEB es una empresa dedicada a brindar soluciones tecnológicas innovadoras para mejorar la calidad de vida.</div>
-                </div>
-                
+                </div>           
                 <div class="footer-column">
                     <div class="cont">Enlaces Rápidos</div>
                     <ul class="inf">
@@ -76,7 +126,6 @@
                         <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>
                     </ul>
                 </div>
-    
                 <div class="footer-column">
                     <div class="ext">Contacto</div><br><br><br>
                     <div class="text">Email: info@alphaweb.com</div>
