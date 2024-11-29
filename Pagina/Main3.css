@@ -23,32 +23,13 @@
     color:  #000000;
 }
 
-.search-container {
-    float: right;
-}
-
-.search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-}
-
-.search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #333;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    color: #ffffff;
-}
-
-.search-container button:hover {
-    background: #ddd;
-    color: #000000;
+form {
+    background-color:#000000;
+    padding: 10px 20px;
+    max-width: 500px;
+    width: 100%;
+    border-style:double;
+    margin-top: 50px;
 }
 
 body {
@@ -65,14 +46,7 @@ body {
     height: 100vh;
 }
 
-form {
-    background-color: transparent;
-    padding: 10px 20px;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0px 0px 65px;
-    margin-top: 50px;
-}
+
 
 input, textarea, select {
     min-width: 100%;
