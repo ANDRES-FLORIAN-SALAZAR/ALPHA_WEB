@@ -46,8 +46,6 @@ body {
     height: 100vh;
 }
 
-
-
 input, textarea, select {
     min-width: 100%;
     box-sizing: border-box;
