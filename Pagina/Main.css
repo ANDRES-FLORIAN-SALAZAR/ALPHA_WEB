@@ -156,6 +156,26 @@ video{
     color: #ffffff;
 } 
 
+.whatsapp-button { position: fixed; 
+    bottom: 5px; 
+    right: 80px; 
+    z-index: 100; 
+} 
+
+.whatsapp-button img { width: 50px; 
+    height: 50px; 
+}
+
+.instagram-button { position: fixed; 
+    bottom: 5px; 
+    right: 20px; 
+    z-index: 100; 
+} 
+
+.instagram-button img { width: 50px; 
+    height: 50px; 
+}
+
 .footer {background-color: #000000;
     color: #f8f7f7;
     padding: 10px 0;
@@ -200,6 +220,19 @@ video{
     padding-top: 10px;
     text-align: center;
 }
+
+.footer-social {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Espacio por encima */
+}
+
+.footer-social .social-button img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
 
 @media (min-width: 768px) { /*para poder revisar los bloques de texto en columnas*/
     .footer-container {
