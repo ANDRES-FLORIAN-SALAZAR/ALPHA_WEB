@@ -1,10 +1,10 @@
-.Inicial,.Final{text-align: center;}
-
-.Inicial,.Final{font-family: "Nerko One", cursive;
+.Inicial,.Final{
+    text-align: center;
+    font-family: "Nerko One", cursive;
     font-weight: 400;
     font-style: normal;
     color: #ccc;
-    }
+}
 
 .navbar {
     overflow: hidden;
@@ -14,7 +14,7 @@
 .navbar a {
     float: left;
     display: block;
-    color:#ffffff;
+    color: #ffffff;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -62,15 +62,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
+img {
     width: 300px;
     height: 300px;
     border-width: 15px;
-    border-color:#0000;
-    border-style:inset
+    border-color: #0000;
+    border-style: inset;
 }
 
-p{list-style: none;
+p {
+    list-style: none;
     text-align: center;
     line-height: 1.4;
     font-size: 25px;
@@ -78,12 +79,31 @@ p{list-style: none;
     color: #ffffff;
 }
 
-h1{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+h1 { 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     text-align: center; 
-    }
+}
 
-h2{
+h2, h3{
+    list-style: none;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 25px;
+    text-shadow: 0 0 10px #e90d0d;
+    color: #ffffff;
+}
+
+.ext {
+    list-style: none;
+    font-size: 25px;
+    text-align: justify;
+    text-shadow: 0 0 10px #e90d0d;
+    color: #ffffff;
+    
+}
+
+.prext {
     list-style: none;
     text-align: left;
     line-height: 1.4;
@@ -92,112 +112,87 @@ h2{
     color: #ffffff;
 }
 
-h3{list-style: none;
-    text-align: left;
-    line-height: 1.4;
-    font-size: 25px;
-    text-shadow: 0 0 10px #e90d0d;
-    color: #ffffff;
-}
-
-h4{list-style: none;
+h4 { 
+    list-style: none;
     text-align: center;
     line-height: 2;
     font-size: 15px;
     text-shadow: 0 0 10px #000202;
     color: #ffffff;
     width: 900px;
-    }
+}
 
-video{
+.text { 
+    color: #ffffff; 
+    text-align: justify;
+    font-size: 20px;
+    max-width: 300px;
+    line-height: 1.6;
+} 
+
+.inf {
+    color: #ffffff; 
+    text-align: left;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.cont {
+    color: #ffffff; 
+    text-align: left;
+    line-height: 1.4;
+    font-size: 25px;
+    text-shadow: 0 0 10px #e90d0d;
+    margin: 0 0 10px 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+video {
     width: 1480px;
     height: 720px;
     background-color: transparent;
 }
 
-.text { color: #ffffff; 
-    margin-left: 0;
-    text-align: justify;
-    list-style: none;
-    text-align: left;
-    line-height: 1.4;
-    font-size: 21px;
-} 
-
-.ext{
-    list-style: none;
-    text-align: left;
-    line-height: 0;
-    font-size: 25px;
-    text-shadow: 0 0 10px #e90d0d;
-    color: #ffffff;
-}
-
-.inf { color: #ffffff; 
-    margin-left: 80px;
-    text-align: left;
-} 
-
-.inf2 { list-style: none;
-    text-align: left;
-    line-height: 0;
-    font-size: 25px;
-    color: #ffffff;
-} 
-
-.cont { color: #ffffff; 
-    margin-left: 80px;
-    text-align: left;
-    list-style: none;
-    text-align: left;
-    line-height: 1.4;
-    font-size: 25px;
-    text-shadow: 0 0 10px #e90d0d;
-    color: #ffffff;
-} 
-
-.whatsapp-button { position: fixed; 
+.whatsapp-button { 
+    position: fixed; 
     bottom: 5px; 
     right: 80px; 
     z-index: 100; 
 } 
 
-.whatsapp-button img { width: 50px; 
+.whatsapp-button img { 
+    width: 50px; 
     height: 50px; 
 }
 
-.instagram-button { position: fixed; 
-    bottom: 5px; 
-    right: 20px; 
-    z-index: 100; 
-} 
-
-.instagram-button img { width: 50px; 
-    height: 50px; 
-}
-
-.footer {background-color: #000000;
+.footer {
+    background-color: #000000;
     color: #f8f7f7;
     padding: 10px 0;
     width: 100%;
     text-align: center;
 }
 
-.footer-container {display: flex;
+.footer-container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
+    margin:auto;
+    padding: 0;
 }
 
-.footer-column {margin: 10px 0;
+.footer-column {
+    margin: 20px; 
     text-align: left;
     width: 100%;
 }
 
-.footer-column h3 {margin-bottom: 10px;
+.footer-column h3 {
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -207,15 +202,22 @@ video{
     text-decoration: none;
 }
 
-.footer-column ul {list-style: none;
+.footer-column ul {
+    list-style: none;
     padding: 0;
+    margin: 0 0 10px 80px; /* Ajusta el margen para alinearlo */
 }
 
-.footer-column li {margin-bottom: 5px;}
+.footer-column li {
+    margin-bottom: 5px;
+}
 
-.footer-column a:hover {text-decoration: underline;}
+.footer-column a:hover {
+    text-decoration: underline;
+}
 
-.footer-bottom {margin-top: 10px;
+.footer-bottom {
+    margin-top: 10px;
     border-top: 1px solid #f8f7f7;
     padding-top: 10px;
     text-align: center;
@@ -223,25 +225,30 @@ video{
 
 .footer-social {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 20px; /* Espacio por encima */
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 0 0 -16px;
+}
+
+.footer-social .social-button {
+    margin: 0 0;
 }
 
 .footer-social .social-button img {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px; /* Espacio entre los iconos */
+    width: 50px; 
+    height: 50px; 
 }
 
-
-@media (min-width: 768px) { /*para poder revisar los bloques de texto en columnas*/
+@media (min-width: 768px) {
     .footer-container {
-    flex-direction: row;
-    text-align: left;
+        flex-direction: row;
+        text-align: left;
     }
 
     .footer-column {
-    width: 30%;
-    margin: 0 10px;
+        width: 30%;
+        margin: 0 10px; /* Espacio uniforme entre columnas */
     }
 }
+
