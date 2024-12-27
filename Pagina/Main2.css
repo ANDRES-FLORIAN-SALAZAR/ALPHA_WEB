@@ -138,10 +138,6 @@ form input[type="password"] {
     border-radius: 5px;
 }
 
-.Final {
-    color: #ccc;
-}
-
 .text { color: #ffffff; 
     margin-left: 0;
     text-align: justify;
@@ -283,7 +279,7 @@ padding: 0 10px;
 
 .footer-column a:hover {text-decoration: underline;}
 
-.footer-bottom {margin-top: 10px;
+.final {margin-top: 10px;
     border-top: 1px solid #f8f7f7;
     padding-top: 10px;
     text-align: center;

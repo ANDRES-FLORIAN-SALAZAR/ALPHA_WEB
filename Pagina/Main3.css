@@ -69,12 +69,8 @@ legend {
     padding: 0px 6px;
 }
 
-.Final {
+.Final {margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;
-    bottom: 10;
-    position: center;
-    width: 100%;
+    color: #f7faf7;
 }
