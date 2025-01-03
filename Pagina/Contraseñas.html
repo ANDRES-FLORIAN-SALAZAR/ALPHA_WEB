@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link href="Main5.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="Inicio_Sesión.html">Inicio Sesión</a>
+        <a href="Pagina Principal.html">Inicio</a>
+        <a href="Planes.html">Nuestros Planes</a>
+        <a href="Registro.html">Registrate</a>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+    <center>
+    <form action="/submit_password" method="post">
+        <fieldset>
+            <legend>Generador de Contraseñas</legend>
+            <input type="number" name="char_length" placeholder="Longitud de la contraseña" min="1" max="20" required>
+            <input type="number" name="min_nums" placeholder="Números mínimos" min="0" max="20" required>
+            <input type="number" name="min_minus" placeholder="Letras minúsculas mínimas" min="0" max="20" required>
+            <input type="number" name="min_mayus" placeholder="Letras mayúsculas mínimas" min="0" max="20" required>
+            <input type="number" name="min_simbolos" placeholder="Símbolos mínimos" min="0" max="20" required>
+            <p id="error_msg" style="color:red;"></p>
+        </fieldset>
+        <br><input type="submit" value="Generar Contraseña">
+    </form>
+    <div class="Final">
+        <br><p>&copy; 2025 ALPHA WEB. Todos los derechos reservados.</p>
+    </div>
+    </center>
+</body>
+</html>
