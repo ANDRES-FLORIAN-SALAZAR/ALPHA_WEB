@@ -73,3 +73,6 @@ def submit_password():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+#DOCUMENTO DE AYUDA DE UNIÓN#
