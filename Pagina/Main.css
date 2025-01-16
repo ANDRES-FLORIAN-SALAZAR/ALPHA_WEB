@@ -71,7 +71,7 @@ p {
     list-style: none;
     text-align: center;
     line-height: 1.4;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 0 0 10px #0de91f;
     color: #ffffff;
 }
@@ -82,13 +82,23 @@ h1 {
     text-align: center; 
 }
 
-h2, h3 {
+h2,h3,.cont {
     list-style: none;
     text-align: left;
     line-height: 1.2;
     font-size: 25px;
     text-shadow: 0 0 10px #e90d0d;
     color: #ffffff;
+}
+
+h4 { 
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    text-shadow: 0 0 10px #000202;
+    color: #ffffff;
+    width: 900px;
 }
 
 .ext {
@@ -108,16 +118,6 @@ h2, h3 {
     color: #ffffff;
 }
 
-h4 { 
-    list-style: none;
-    text-align: center;
-    line-height: 2;
-    font-size: 15px;
-    text-shadow: 0 0 10px #000202;
-    color: #ffffff;
-    width: 900px;
-}
-
 .text { 
     color: #ffffff; 
     text-align: justify;
@@ -131,18 +131,6 @@ h4 {
     text-align: left;
     font-size: 20px;
     line-height: 1;
-}
-
-.cont {
-    color: #ffffff; 
-    text-align: left;
-    line-height: 1.4;
-    font-size: 25px;
-    text-shadow: 0 0 10px #e90d0d;
-    margin: 0 0 10px 80px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 video {
@@ -169,25 +157,32 @@ video {
     padding: 10px 0;
     width: 100%;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .footer-column {
-    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
     text-align: left;
-    width: 100%;
+    flex: 1;
+    min-width: 200px;
 }
 
-.footer-column h3 {
+.footer-column h2 {
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -201,7 +196,7 @@ video {
 .footer-column ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 10px 80px; 
+    margin: 0 0 10px 0;
 }
 
 .footer-column li {
@@ -212,28 +207,20 @@ video {
     text-decoration: underline;
 }
 
-.final {
-    margin-top: 10px;
-    border-top: 1px solid #f8f7f7;
-    padding-top: 10px;
-    text-align: center;
-}
-
 .footer-social {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
-    margin: 0 0 0 -16px;
 }
 
 .footer-social .social-button {
-    margin: 0 0;
+    margin: 0 10px;
 }
 
 .footer-social .social-button img {
-    width: 50px; 
-    height: 50px; 
+    width: 30px;
+    height: 30px;
 }
 
 .footer-links {

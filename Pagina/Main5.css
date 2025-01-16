@@ -30,10 +30,11 @@ form {
     width: 100%;
     border-style: double;
     margin-top: 50px;
+    flex: 1;
 }
 
 body {
-    margin: auto;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #f8f7f7;
     background-image: url("../Imagenes/Registro.jpg");
@@ -41,9 +42,26 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2{
+    list-style: none;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 25px;
+    text-shadow: 0 0 10px #e90d0d;
+    color: #ffffff;
+}
+
+p {
+    list-style: none;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 20px;
+    text-shadow: 0 0 10px #0de91f;
+    color: #ffffff;
 }
 
 input, textarea, select {
@@ -69,9 +87,127 @@ legend {
     padding: 0px 6px;
 }
 
-.Final {
+.whatsapp-button { 
+    position: fixed; 
+    bottom: 5px; 
+    right: 80px; 
+    z-index: 100; 
+} 
+
+.whatsapp-button img { 
+    width: 50px; 
+    height: 50px; 
+}
+
+.final {
     margin-top: 10px;
+    border-top: 1px solid #f8f7f7;
     padding-top: 10px;
     text-align: center;
-    color: #f7faf7;
+}
+
+.footer {
+    background-color: #000000;
+    color: #f8f7f7;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-column p, .footer-column ul, .footer-column li, .footer-column a {
+    font-size: 16px;
+    color: #f8f7f7;
+    text-decoration: none;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.final {
+    margin-top: 10px;
+    border-top: 1px solid #f8f7f7;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-social .social-button {
+    margin: 0 10px;
+}
+
+.footer-social .social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer-column {
+        width: 30%;
+        margin: 0 10px; 
+    }
 }

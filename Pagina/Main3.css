@@ -38,7 +38,7 @@ body {
     color:  #000000;
 }
 
-h2{
+h2,.cont{
     list-style: none;
     text-align: center;
     line-height: 1.4;
@@ -47,6 +47,14 @@ h2{
     color: #ffffff;
 }
 
+p {
+    list-style: none;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 20px;
+    text-shadow: 0 0 10px #0de91f;
+    color: #ffffff;
+}
 .text { color: #ffffff; 
     margin-left: 0;
     text-align: justify;
@@ -71,16 +79,6 @@ h2{
     text-align:justify;
 }
 
-.cont { color: #ffffff; 
-    margin-left: 80px;
-    text-align: left;
-    list-style: none;
-    text-align: left;
-    line-height: 1.4;
-    font-size: 25px;
-    text-shadow: 0 0 10px #e90d0d;
-    color: #ffffff;
-} 
 form {
     background-color:#000000;
     padding: 10px 20px;
@@ -113,12 +111,32 @@ legend {
     padding: 0px 6px;
 }
 
+.whatsapp-button { 
+    position: fixed; 
+    bottom: 5px; 
+    right: 80px; 
+    z-index: 100; 
+} 
+
+.whatsapp-button img { 
+    width: 50px; 
+    height: 50px; 
+}
+.final {
+    margin-top: 10px;
+    border-top: 1px solid #f8f7f7;
+    padding-top: 10px;
+    text-align: center;
+}
+
 .footer {
     background-color: #000000;
     color: #f8f7f7;
     padding: 10px 0;
     width: 100%;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-container {
@@ -141,7 +159,6 @@ legend {
     flex: 1;
     min-width: 200px;
 }
-
 
 .footer-column h2 {
     margin-bottom: 10px;
