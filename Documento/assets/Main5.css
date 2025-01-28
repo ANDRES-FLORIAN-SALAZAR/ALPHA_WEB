@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     height: 50px; 
-    z-index: 1000;
+    z-index: 1000; /* sobreposicion */
 }
 
 .navbar a {
@@ -20,69 +20,33 @@
 
 .navbar a:hover {
     background-color: #ddd;
-    color:  #000000;
+    color: #000000;
+}
+
+form {
+    background-color: #000000;
+    padding: 10px 20px;
+    max-width: 500px;
+    width: 100%;
+    border-style: double;
+    margin-top: 50px;
+    flex: 1;
 }
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #f8f7f7;
-    background-image: url("../Imagenes/Aleatorio.jpg");
+    background-image: url("../Imagenes/Registro.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-form {
-    background-color: #506171;
-    padding: 10px 20px;
-    max-width: 500px;
-    width: 100%;
-    border-style: double;
-    margin-top: 50px;
-    border-radius: 20px;
-}
-
-input, textarea, select {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 6px 12px;
-    border: none;
-    border: 1px solid #2e9952;
-    box-shadow: 0px 0px 15px #0003;
-    background-color: transparent;
-    border-radius: 5px;
-    color: #ffffff;
-    margin: 8px 0px;
-}
-
-fieldset {
-    margin-top: 20px;
-    border: 1px solid #f1efef;
-    border-radius: 5px;
-}
-
-legend {
-    padding: 0px 6px;
-}
-
-.Final {
-    margin-top: 10px;
-    padding-top: 10px;
-    text-align: center;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-h2 {
+h2{
     list-style: none;
     text-align: left;
     line-height: 1.2;
@@ -98,6 +62,29 @@ p {
     font-size: 20px;
     text-shadow: 0 0 10px #0de91f;
     color: #ffffff;
+}
+
+input, textarea, select {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #2e9952;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #f1efef;
+    margin: 8px 0px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #f1efef;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0px 6px;
 }
 
 .whatsapp-button { 
@@ -118,12 +105,15 @@ p {
     padding-top: 10px;
     text-align: center;
 }
+
 .footer {
     background-color: #000000;
     color: #f8f7f7;
     padding: 10px 0;
     width: 100%;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-container {
@@ -137,6 +127,10 @@ p {
 }
 
 .footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 20px;
     text-align: left;
     flex: 1;
