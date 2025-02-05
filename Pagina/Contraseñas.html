@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contraseñas</title>
     <link href="Main5.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="navbar">
@@ -26,19 +27,22 @@
     </a>
     
     <center>
-        <form action="/submit_password" method="post">
+        <form action="javascript:void(0);" onsubmit="generarContraseña()">
         <fieldset>
-            <legend>Generador de Contraseñas</legend>
+            <legend>Crear Contraseña</legend>
             <input type="number" name="char_length" placeholder="Longitud de la contraseña" min="1" max="20" required>
             <input type="number" name="min_nums" placeholder="Números mínimos" min="0" max="20" required>
             <input type="number" name="min_minus" placeholder="Letras minúsculas mínimas" min="0" max="20" required>
             <input type="number" name="min_mayus" placeholder="Letras mayúsculas mínimas" min="0" max="20" required>
             <input type="number" name="min_simbolos" placeholder="Símbolos mínimos" min="0" max="20" required>
-            <p id="error_msg" style="color:red;"></p>
         </fieldset>
         <br><input type="submit" value="Generar Contraseña">
+        <fieldset>
+            <legend>Contraseña</legend>
+            <input type="text" name="contraseña" placeholder="su contraseña es: ">
+        </fieldset>
     </form>
-</center><br><br><br><br><br>
+</center><br><br><br>
 
 <footer class="footer">
     <hr><div class="footer-container">
