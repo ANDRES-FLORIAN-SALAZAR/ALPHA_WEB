@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseñas</title>
+    <link href="Main5.css" rel="stylesheet">
+    <script>
+        function crearNumero() {
+            return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+        }
+
+        function crearLetraMinuscula() {
+            return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+        }
+
+        function crearLetraMayuscula() {
+            return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+        }
+
+        function crearSimbolo() {
+            const simbolos = "!@#$%^&*()_+[]{}|;:,.<>?";
+            return simbolos[Math.floor(Math.random() * simbolos.length)];
+        }
+
+        function actualizarCampos() {
+            const charLength = parseInt(document.querySelector('input[name="char_length"]').value);
+            const maxNums = Math.floor(charLength * 0.2);
+            const maxMinus = Math.floor(charLength * 0.3);
+            const maxMayus = Math.floor(charLength * 0.3);
+            const maxSimbolos = Math.floor(charLength * 0.2);
+
+            document.querySelector('input[name="min_nums"]').max = maxNums;
+            document.querySelector('input[name="min_minus"]').max = maxMinus;
+            document.querySelector('input[name="min_mayus"]').max = maxMayus;
+            document.querySelector('input[name="min_simbolos"]').max = maxSimbolos;
+        }
+
+        function generarContraseña() {
+            const charLength = parseInt(document.querySelector('input[name="char_length"]').value);
+            let minNums = parseInt(document.querySelector('input[name="min_nums"]').value);
+            let minMinus = parseInt(document.querySelector('input[name="min_minus"]').value);
+            let minMayus = parseInt(document.querySelector('input[name="min_mayus"]').value);
+            let minSimbolos = parseInt(document.querySelector('input[name="min_simbolos"]').value);
+
+            let password = [];
+
+            while (password.length < charLength) {
+                if (minNums > 0) {
+                    password.push(crearNumero());
+                    minNums--;
+                }
+                if (minMinus > 0 && password.length < charLength) {
+                    password.push(crearLetraMinuscula());
+                    minMinus--;
+                }
+                if (minMayus > 0 && password.length < charLength) {
+                    password.push(crearLetraMayuscula());
+                    minMayus--;
+                }
+                if (minSimbolos > 0 && password.length < charLength) {
+                    password.push(crearSimbolo());
+                    minSimbolos--;
+                }
+
+                // Completa la contraseña con caracteres aleatorios dentro del límite ya especificado
+                while (password.length < charLength) {
+                    const functions = [crearNumero, crearLetraMinuscula, crearLetraMayuscula, crearSimbolo];
+                    password.push(functions[Math.floor(Math.random() * functions.length)]());
+                }
+            }
+
+            document.querySelector('input[name="contraseña"]').value = password.join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('input[name="char_length"]').addEventListener('input', actualizarCampos);
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Inicio_Sesión.html">Inicio Sesión</a>
+        <a href="Inicio.html">Inicio</a>
+        <a href="Planes.html">Nuestros Planes</a>
+        <a href="Registro.html">Registrate</a>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div><br><br><br>
+    
+    <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
+        <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+    </a>
+    
+    <center>
+        <form action="javascript:void(0);" onsubmit="generarContraseña()">
+        <fieldset>
+            <legend>Crear Contraseña</legend>
+            <input type="number" name="char_length" placeholder="Longitud de la contraseña" min="1" max="20" required>
+            <input type="number" name="min_nums" placeholder="Números mínimos" min="0" max="20" required>
+            <input type="number" name="min_minus" placeholder="Letras minúsculas mínimas" min="0" max="20" required>
+            <input type="number" name="min_mayus" placeholder="Letras mayúsculas mínimas" min="0" max="20" required>
+            <input type="number" name="min_simbolos" placeholder="Símbolos mínimos" min="0" max="20" required>
+        </fieldset>
+        <br><input type="submit" value="Generar Contraseña">
+        <fieldset>
+            <legend>Contraseña</legend>
+            <input type="text" name="contraseña" placeholder="su contraseña es: ">
+        </fieldset>
+    </form>
+</center><br><br><br>
+
+<footer class="footer">
+    <hr><div class="footer-container">
+        <div class="footer-column">
+            <h2>Sobre Nosotros</h2>
+            <div class="text">ALPHA WEB es una empresa dedicada a brindar soluciones tecnológicas innovadoras para mejorar la calidad de vida.</div>
+        </div>
+        
+        <div class="footer-column">
+            <div class="cont"><h2>Enlaces Rápidos</h2></div>
+            <ul class="inf">
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Planes.html">Nuestros Planes</a></li>
+                <li><a href="Registro.html">Registro</a></li>
+                <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>
+                <li><a href="Contraseñas.html">Contraseñas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <div class="ext"><h2>Contacto</h2></div>
+            <div class="text">Email: info@alphaweb.com</div>
+            <div class="text">Teléfono: +57 3143757171</div>
+        </div>
+
+        <div class="footer-column">
+            <div class="prext"><h2>Redes Sociales</h2></div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/tu_perfil" class="social-button">
+                    <img src="../Iconos/facebook.jpg" alt="Facebook" />
+                </a>
+                <a href="https://www.twitter.com/tu_perfil" class="social-button">
+                    <img src="../Iconos/X.jpg" alt="Twitter" />
+                </a>
+                <a href="https://www.instagram.com/tu_perfil" class="social-button">
+                    <img src="../Iconos/instagram.jpg" alt="Instagram" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="final">
+        <br><p>&copy; 2024 ALPHA WEB. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#popup1">Política de privacidad</a> | 
+        <a href="#popup2">Términos de servicio</a> | 
+        <a href="#popup3">Aviso legal</a> | 
+        <a href="#popup4">Preferencias de cookies</a> | 
+        <a href="#popup5">Sus opciones de privacidad</a>
+    </div>
+</footer>
+</body>
+</html>
+
