@@ -18,5 +18,5 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('',include('Alpha_web.urls')),
+    path('', include('Alpha_web.urls')),
 ]

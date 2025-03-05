@@ -32,6 +32,7 @@ class Order(models.Model):
             customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
             quantity = models.IntegerField()
             order_date = models.DateTimeField(auto_now_add=True)
-
+            class Meta:
+                ordering = ['-order_date']
             def __str__(self):
                 return f"Order of {self.quantity} {self.product.name}(s) by {self.customer.first_name} on {self.order_date}"
