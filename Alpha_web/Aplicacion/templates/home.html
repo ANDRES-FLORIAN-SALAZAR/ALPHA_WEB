@@ -3,6 +3,59 @@
 {% load static %}
 
 {% block content%}
+
+<ul>
+    <li>
+        <a href="{% url 'Inicio' %}">Inicio</a>
+    </li>
+    <li>
+        <a href="{% url 'Planes' %}">Planes</a>
+    </li>
+    <li>
+        <a href="{% url 'Inicio_Sesión' %}">Inicio de Sesión</a>
+    </li>
+    <li>
+        <a href="{% url 'Registro' %}">Registro</a>
+    </li>
+    <li>
+        <a href="{% url 'Contraseñas' %}">Contraseñas</a>
+    </li>
+</ul>
+<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+
+
+<div class="content">
+    <center>
+        <img id="ALPHAWEB" src="../Imagenes/Logo.jpg" alt="Logo" height="800" width="800">
+        <hr>
+    </center>
+    
+    <center>
+        <p>MISIÓN</p>
+        <p><h4>Nuestra misión es brindar soluciones tecnológicas innovadoras y accesibles que mejoren la calidad de vida de las personas.<br> 
+        Nos esforzamos por ofrecer productos y servicios de alta calidad que permitan a nuestros usuarios alcanzar sus objetivos de manera eficiente y efectiva.</h4></p>
+
+        <p>VISIÓN</p>
+        <p><h4>Nuestra visión es ser líderes en el mercado de tecnología, reconocidos por nuestra dedicación a la innovación y la excelencia.<br>
+        Aspiramos a crear un futuro donde la tecnología esté al alcance de todos y sea una herramienta esencial para el progreso y el bienestar global.</h4></p>
+
+        <p>¿QUIÉNES SOMOS?</p>
+        <p><h4>Somos ALPHA WEB, una empresa apasionada por la tecnología y su impacto positivo en el mundo.<br>
+        Nuestro equipo está formado por profesionales comprometidos con la excelencia y la innovación.<br>
+        Desde nuestra fundación, nos hemos dedicado a desarrollar soluciones tecnológicas que faciliten la vida de nuestros usuarios y contribuyan al desarrollo de una sociedad más conectada y eficiente.</h4></p><hr>
+        <br><br><br>
+    </center>
+
+    <center>
+        <video controls autoplay muted src="../Videos/ALPHA_WEB.mp4" alt="este video es informativo"></video>
+        <track src="ALPHA_WEB.vtt" default kind="fondo" srclang="es" label="español (latinoamerica)"></track>
+    </center>
+    <br><br><br><br>
+</div>
+
+<a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
+    <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+</a>
 {% endblock %}
 
-crear otra vista,crear html en base de los links
+,crear html en base de los links

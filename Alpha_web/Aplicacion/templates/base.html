@@ -26,9 +26,23 @@
         </div>
     </body>
         {% block content %}
-
-        
-
+        <ul>
+            <li>
+                <a href="{% url 'Main.css' %}">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'Main2.css' %}">Planes</a>
+            </li>
+            <li>
+                <a href="{% url 'Main4.css' %}">Inicio de Sesión</a>
+            </li>
+            <li>
+                <a href="{% url 'Main3.css' %}">Registro</a>
+            </li>
+            <li>
+                <a href="{% url 'Main5.css' %}">Contraseñas</a>
+            </li>
+        </ul>
         {% endblock %}
         <footer class="footer">
             <hr><div class="footer-container">
