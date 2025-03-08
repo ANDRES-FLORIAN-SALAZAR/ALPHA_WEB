@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AlphaWebConfig(AppConfig):
+class AplicacionConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Alpha_web'
+    name = 'Aplicacion'
