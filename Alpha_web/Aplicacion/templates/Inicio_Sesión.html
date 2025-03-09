@@ -10,13 +10,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link href="Main4.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Main4.css' %}">
+
+    <style>
+        body {
+            background-image: url('{% static 'img/Aleatorio.jpg' %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
 </head>
 
 <body>
 
     <div class="navbar">
-        <a href="{% url "Inicio" %}">Inicio</a>
+        <a href="{% url "home" %}">home</a>
         <a href="{% url "Planes" %}">Nuestros Planes</a>
         <a href="{% url "Contraseñas" %}">Contraseñas</a>
         <div class="search-container">
@@ -27,9 +42,8 @@
         </div>
     </div>
 
-    <br><br><br><br>
-
     <center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <form action="/login" method="post">
             <fieldset>
                 <br><center><legend>INICIO DE SESIÓN</legend></center>
@@ -58,7 +72,7 @@
             <div class="footer-column">
                 <div class="cont"><h2>Enlaces Rápidos</h2></div>
                 <ul class="inf">
-                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="home.html">home</a></li>
                     <li><a href="Planes.html">Nuestros Planes</a></li>
                     <li><a href="Registro.html">Registro</a></li>
                     <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>

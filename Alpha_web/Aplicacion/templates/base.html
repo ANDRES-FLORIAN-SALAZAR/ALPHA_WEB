@@ -9,11 +9,12 @@
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/Main.css' %}">
+    
 </head>
 
 {% block content %}
         <div class="navbar">
-            <a href="{% url 'Inicio' %}">Inicio</a>
+            <a href="{% url 'home' %}">home</a>
             <a href="{% url 'Planes' %}">Nuestros Planes</a>
             <a href="{% url 'Registro' %}">Regístrate</a>
             <a href="{% url 'Inicio_Sesión' %}">Iniciar Sesión</a>
@@ -39,7 +40,7 @@
             <div class="footer-column">
                 <h2>Enlaces Rápidos</h2>
                 <ul class="inf">
-                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="home.html">home</a></li>
                     <li><a href="Planes.html">Nuestros Planes</a></li>
                     <li><a href="Registro.html">Registro</a></li>
                     <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>

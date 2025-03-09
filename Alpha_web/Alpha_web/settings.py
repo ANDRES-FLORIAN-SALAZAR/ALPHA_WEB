@@ -116,9 +116,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = []
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+import os
+
+# Ruta base del proyecto
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# URL para archivos estáticos
+STATIC_URL = '/static/'
+
+# Directorios donde Django buscará archivos estáticos adicionales
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'Aplicacion/static/css'),
+]
+
+# Ruta donde se recopilarán los archivos estáticos en producción
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

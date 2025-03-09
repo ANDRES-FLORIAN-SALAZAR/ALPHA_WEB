@@ -11,14 +11,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Registro</title>
-    <link href="Main3.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Main3.css' %}">
+
+    <style>
+        body {
+            background-image: url('{% static 'img/Registro.jpg' %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+<body>
 </head>
 
 <body>
 
     <div class="navbar">
         <a href="{% url 'Inicio_Sesión' %}">Inicio Sesión</a>
-        <a href="{% url 'Inicio' %}">Inicio</a>
+        <a href="{% url 'home' %}">home</a>
         <a href="{% url 'Contraseñas' %}">Contraseñas</a>
         
     
@@ -35,7 +50,7 @@
     <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
     </a>
     
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <form action="/submit" method="post">
         <fieldset>
             <legend>INFORMACIÓN BÁSICA</legend>
@@ -70,7 +85,7 @@
             <div class="footer-column">
                 <div class="cont"><h2>Enlaces Rápidos</h2></div>
                 <ul class="inf">
-                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="home.html">home</a></li>
                     <li><a href="Planes.html">Nuestros Planes</a></li>
                     <li><a href="Registro.html">Registro</a></li>
                     <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>

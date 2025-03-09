@@ -8,8 +8,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Inicio</title>
+    <title>home</title>
     <link href="Main.css" rel="stylesheet">
+
+    
 </head>
 
 
@@ -52,9 +54,9 @@
         </center>
 
         <center>
-            <video controls autoplay muted src="../Videos/ALPHA_WEB.mp4" alt="este video es informativo"></video>
-            <track src="ALPHA_WEB.vtt" default kind="fondo" srclang="es" label="español (latinoamerica)"></track>
-        </center>
+            <video controls autoplay muted>
+            <source src="{% static 'Videos/ALPHA_WEB.mp4' %}" type="video/mp4">
+            </center>
         <br><br><br><br>
     </div>
 
@@ -72,7 +74,7 @@
             <div class="footer-column">
                 <div class="cont"><h2>Enlaces Rápidos</h2></div>
                 <ul class="inf">
-                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="home.html">home</a></li>
                     <li><a href="Planes.html">Nuestros Planes</a></li>
                     <li><a href="Registro.html">Registro</a></li>
                     <li><a href="Inicio_Sesión.html">Iniciar Sesión</a></li>
