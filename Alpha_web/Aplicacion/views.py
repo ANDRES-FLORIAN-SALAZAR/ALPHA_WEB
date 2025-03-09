@@ -8,7 +8,7 @@ def Inicio(request):
     return render(request, 'Inicio.html')   
 
 def Planes(request):
-    return render(request, 'PLanes.html')
+    return render(request, 'Planes.html')
 
 def Registro(request):
     return render(request, 'Registro.html')
