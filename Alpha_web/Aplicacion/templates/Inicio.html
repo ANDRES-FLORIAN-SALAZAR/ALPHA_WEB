@@ -1,3 +1,7 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content%}
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,10 +16,10 @@
 <body>
 
     <div class="navbar">
-        <a href="Planes.html">Nuestros Planes</a>
-        <a href="Registro.html">Registrate</a>
-        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
-        <a href="Contraseñas.html">Contraseñas</a>
+        <a href="Planes">Nuestros Planes</a>
+        <a href="Registro">Registrate</a>
+        <a href="Inicio_Sesión">Iniciar Sesión</a>
+        <a href="Contraseñas">Contraseñas</a>
         
         <div class="search-container">
             <form action="/search" method="get">
@@ -110,5 +114,10 @@
             <a href="#popup5">Sus opciones de privacidad</a>
         </div>
         </footer>
+        
+        <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
+            <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+        </a>
+        {% endblock %}
 </body>
 </html>

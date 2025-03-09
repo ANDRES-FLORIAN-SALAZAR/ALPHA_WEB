@@ -6,46 +6,26 @@
     <title>ALPHA WEB</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Cargar la biblioteca de etiquetas static -->
+
     {% load static %}
-    <!-- Usar la etiqueta static para cargar el archivo CSS -->
     <link rel="stylesheet" href="{% static 'css/Main.css' %}">
 </head>
-<body>
-    <div class="navbar">
-        <a href="Planes.html">Nuestros Planes</a>
-        <a href="Registro.html">Regístrate</a>
-        <a href="Inicio_Sesión.html">Iniciar Sesión</a>
-        <a href="Contraseñas.html">Contraseñas</a>
-        
-        <div class="search-container">
-            <form action="/search" method="get">
-                <input type="text" placeholder="Buscar..." name="search">
-                <button type="submit">Buscar</button>
-            </form>
+
+{% block content %}
+        <div class="navbar">
+            <a href="{% url 'Inicio' %}">Inicio</a>
+            <a href="{% url 'Planes' %}">Nuestros Planes</a>
+            <a href="{% url 'Registro' %}">Regístrate</a>
+            <a href="{% url 'Inicio_Sesión' %}">Iniciar Sesión</a>
+            <a href="{% url 'Contraseñas' %}">Contraseñas</a>
+            
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Buscar..." name="search">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </div>
-    
-    <div>
-        {% block content %}
-        <ul>
-            <li>
-                <a href="Inicio.html">Inicio</a>
-            </li>
-            <li>
-                <a href="Planes.html">Planes</a>
-            </li>
-            <li>
-                <a href="Inicio_Sesión.html">Inicio de Sesión</a>
-            </li>
-            <li>
-                <a href="Registro.html">Registro</a>
-            </li>
-            <li>
-                <a href="Contraseñas.html">Contraseñas</a>
-            </li>
-        </ul>
-        {% endblock %}
     </div>
 
     <footer class="footer">
@@ -102,7 +82,7 @@
             <a href="#popup5">Sus opciones de privacidad</a>
         </div>
     </footer>
-
+    {% endblock %}
     <script src="" async defer></script>
 </body>
 </html>

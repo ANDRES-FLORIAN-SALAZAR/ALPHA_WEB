@@ -1,3 +1,8 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content%}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +13,7 @@
 
     <div class="navbar">
 
-        <a href="Registro.html">Registrate</a>
+        <a href="{% url Registro %}">Registrate</a>
         
         <div class="search-container">
             <form action="/search" method="get">
@@ -169,5 +174,11 @@
         <a href="#popup5">Sus opciones de privacidad</a>
     </div>
     </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
+        <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+    </a>
+    {% endblock %}
+
 </body>
 </html>
