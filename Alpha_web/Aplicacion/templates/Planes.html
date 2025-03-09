@@ -57,82 +57,77 @@
     
     <h3><hr><br><center>Lista de Precios</h3></center><br>
     
-    <div class="Planes">
-        <ol style="list-style-type: circle">
-
-            <strong><h3>Planes Personales</h3></strong></li><br>
-
-            <div class="card-container"> 
-                <div class="card"> <div class="content"> 
+<div class="Planes">
+    <ol style="list-style-type: circle">
+        <strong><h3>Planes Personales</h3></strong></li><br>
+        <div class="card-container"> 
+            <div class="card"> 
+                <div class="content"> 
                     <div class="title">Plan Personal</div>
-                    <img src="../iconos/usuario.jpg" alt="Business Plan Image" class="imagen">
+                    <img src="{% static 'Iconos/usuario.jpg' %}" alt="Business Plan Image" class="imagen">
                     <div class="price">$33,999</div> 
                     <div class="description">El Plan Personal está diseñado para individuos que buscan maximizar su productividad y organización diaria.
                         Con herramientas intuitivas y accesibles, este plan proporciona soluciones personalizadas para gestionar tareas, 
                         almacenar información de manera segura y mantenerse conectado en todo momento. Perfecto para estudiantes, 
                         profesionales independientes y cualquier persona que quiera llevar su eficiencia al siguiente nivel.</div> 
-                    </div> 
-                    <button>Buy now</button> 
-                </div>
-
-                <div class="card"> 
-                        <div class="content"> 
-                            <div class="title">Plan Teams</div>
-                            <img src="../iconos/teams.jpg" alt="Business Plan Image" class="imagen"> 
-                            <div class="price">$100,000</div> 
-                            <div class="description">El Plan Teams es perfecto para pequeños equipos y proyectos colaborativos. 
-                                Proporciona herramientas de comunicación y gestión de tareas que facilitan la coordinación y el trabajo en conjunto, 
-                                asegurando que todos los miembros del equipo estén alineados y sean productivos.</div> 
-                </div> <button>Buy now</button>
-
-                </div> <div class="card"> 
-                    <div class="content"> 
-                        <div class="title">Plan Familiar</div>
-                        <img src="../iconos/families.jpg" alt="Business Plan Image" class="imagen"> 
-                        <div class="price">$150,000</div> 
-                        <div class="description">Nuestro Plan Familiar está pensado para hogares modernos que necesitan mantenerse conectados y organizados. 
-                            Incluye servicios de almacenamiento compartido, aplicaciones de gestión de tiempo y herramientas de seguridad familiar, 
-                            todo lo necesario para simplificar la vida diaria de tu familia.</div> 
-                    </div> 
-                    <button>Buy now</button> 
                 </div> 
-            </div><br>
+                <button>Buy now</button> 
+            </div>
 
-            <strong><h3>Planes Business</h3></strong></li><br>
-            <div class="card-container"> 
-                <div class="card"> 
-                    <div class="content"> 
-                        <div class="title">Plan Business</div>
-                        <img src="../iconos/business.jpg" alt="Business Plan Image" class="imagen"> 
-                        <div class="price">$200,000</div> 
-                        <div class="description">Nuestro Plan Business está diseñado para empresas que buscan soluciones eficientes y escalables. 
-                            Incluye herramientas avanzadas de colaboración, 
-                            seguridad de alto nivel y soporte técnico especializado, 
-                            ideal para optimizar la productividad y gestionar proyectos empresariales con éxito.</div> 
-                    </div> 
-                    <button>Buy now</button> 
-                </div> <div class="card"> 
-                    <div class="content"> 
-                        <div class="title">Plan Premium</div>
-                        <img src="../iconos/premium.jpg" alt="Business Plan Image" class="imagen"> 
-                        <div class="price">$500,000</div> 
-                        <div class="description">El Plan Premium ofrece lo mejor en tecnología y servicios para empresas exigentes. 
-                            Con prestaciones avanzadas, soporte prioritario y una infraestructura robusta, 
-                            garantiza un rendimiento óptimo y la máxima seguridad para tus operaciones críticas.</div> 
-                    </div> 
-                    <button>Buy now</button> 
+            <div class="card"> 
+                <div class="content"> 
+                    <div class="title">Plan Teams</div>
+                    <img src="{% static 'Iconos/teams.jpg' %}" alt="Business Plan Image" class="imagen"> 
+                    <div class="price">$100,000</div> 
+                    <div class="description">El Plan Teams es perfecto para pequeños equipos y proyectos colaborativos. 
+                        Proporciona herramientas de comunicación y gestión de tareas que facilitan la coordinación y el trabajo en conjunto, 
+                        asegurando que todos los miembros del equipo estén alineados y sean productivos.</div> 
                 </div> 
-            </div><br>
-        </ol>
+                <button>Buy now</button>
+            </div> 
 
-        <form action="ALPHA_WEB/Imagenes/Fondo.jpg" name="Informacion ALPHA WEB" method="get">
-            
-        </form>
-        </div>
+            <div class="card"> 
+                <div class="content"> 
+                    <div class="title">Plan Familiar</div>
+                    <img src="{% static 'Iconos/families.jpg' %}" alt="Business Plan Image" class="imagen"> 
+                    <div class="price">$150,000</div> 
+                    <div class="description">Nuestro Plan Familiar está pensado para hogares modernos que necesitan mantenerse conectados y organizados. 
+                        Incluye servicios de almacenamiento compartido, aplicaciones de gestión de tiempo y herramientas de seguridad familiar, 
+                        todo lo necesario para simplificar la vida diaria de tu familia.</div> 
+                </div> 
+                <button>Buy now</button> 
+            </div> 
+        </div><br>
 
-        <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
-            <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
-        </a>
+        <strong><h3>Planes Business</h3></strong></li><br>
+        <div class="card-container"> 
+            <div class="card"> 
+                <div class="content"> 
+                    <div class="title">Plan Business</div>
+                    <img src="{% static 'Iconos/business.jpg' %}" alt="Business Plan Image" class="imagen"> 
+                    <div class="price">$200,000</div> 
+                    <div class="description">Nuestro Plan Business está diseñado para empresas que buscan soluciones eficientes y escalables. 
+                        Incluye herramientas avanzadas de colaboración, 
+                        seguridad de alto nivel y soporte técnico especializado, 
+                        ideal para optimizar la productividad y gestionar proyectos empresariales con éxito.</div> 
+                </div> 
+                <button>Buy now</button> 
+            </div> 
+
+            <div class="card"> 
+                <div class="content"> 
+                    <div class="title">Plan Premium</div>
+                    <img src="{% static 'Iconos/premium.jpg' %}" alt="Business Plan Image" class="imagen"> 
+                    <div class="price">$500,000</div> 
+                    <div class="description">El Plan Premium ofrece lo mejor en tecnología y servicios para empresas exigentes. 
+                        Con prestaciones avanzadas, soporte prioritario y una infraestructura robusta, 
+                        garantiza un rendimiento óptimo y la máxima seguridad para tus operaciones críticas.</div> 
+                </div> 
+                <button>Buy now</button> 
+            </div> 
+        </div><br>
+    </ol>
+</div>
 
     <footer class="footer">
     <hr><div class="footer-container">
@@ -162,13 +157,13 @@
             <div class="prext"><h2>Redes Sociales</h2></div>
             <div class="footer-social">
                 <a href="https://www.facebook.com/tu_perfil" class="social-button">
-                    <img src="../Iconos/facebook.jpg" alt="Facebook" />
+                    <img src="{% static 'Iconos/facebook.jpg' %}" alt="Facebook" />
                 </a>
                 <a href="https://www.twitter.com/tu_perfil" class="social-button">
-                    <img src="../Iconos/X.jpg" alt="Twitter" />
+                    <img src="{% static 'Iconos/X.jpg' %}" alt="Twitter" />
                 </a>
                 <a href="https://www.instagram.com/tu_perfil" class="social-button">
-                    <img src="../Iconos/instagram.jpg" alt="Instagram" />
+                    <img src="{% static 'Iconos/instagram.jpg' %}" alt="Instagram" />
                 </a>
             </div>
         </div>
@@ -188,7 +183,7 @@
     </footer>
 
     <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
-        <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+        <img src="{% static 'Iconos/whatsapp.jpg' %}" alt=" " />
     </a>
     {% endblock %}
 

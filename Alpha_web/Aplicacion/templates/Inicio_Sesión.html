@@ -42,23 +42,19 @@
         </div>
     </div>
 
-    <center>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <form action="/login" method="post">
-            <fieldset>
-                <br><center><legend>INICIO DE SESIÓN</legend></center>
-                <br><img src="../Iconos/contrasena.jpg" alt="Usuario"><br><br>
-                <input type="text" name="username" placeholder="Usuario" required>
-                <input type="text" name="contraseña" placeholder="Contraseña" required>
-                <input type="button" value="Inicio Sesión" onclick="window.location.href='Planes.html'">
-                <input type="button" value="Registrarse" onclick="window.location.href='Registro.html'">
-            </fieldset>
-        </form>
-    </center>
-    
-    <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
-        <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
-    </a>
+<center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form action="/login" method="post">
+        <fieldset>
+            <br><center><legend>INICIO DE SESIÓN</legend></center>
+            <img src="{% static 'Iconos/contraseña.jpg' %}" alt="contraseña" class="imagen">
+            <input type="text" name="username" placeholder="Usuario" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <input type="button" value="Inicio Sesión" onclick="window.location.href='Planes.html'">
+            <input type="button" value="Registrarse" onclick="window.location.href='Registro.html'">
+        </fieldset>
+    </form>
+</center>
     
     <br><br><br><br><br>
 
@@ -90,13 +86,13 @@
                 <div class="prext"><h2>Redes Sociales</h2></div>
                 <div class="footer-social">
                     <a href="https://www.facebook.com/tu_perfil" class="social-button">
-                        <img src="../Iconos/facebook.jpg" alt="Facebook" />
+                        <img src="{% static 'Iconos/facebook.jpg' %}" alt="Facebook" />
                     </a>
                     <a href="https://www.twitter.com/tu_perfil" class="social-button">
-                        <img src="../Iconos/X.jpg" alt="Twitter" />
+                        <img src="{% static 'Iconos/X.jpg' %}" alt="Twitter" />
                     </a>
                     <a href="https://www.instagram.com/tu_perfil" class="social-button">
-                        <img src="../Iconos/instagram.jpg" alt="Instagram" />
+                        <img src="{% static 'Iconos/instagram.jpg' %}" alt="Instagram" />
                     </a>
                 </div>
             </div>
@@ -116,7 +112,7 @@
         </footer>
         
         <a href="https://api.whatsapp.com/send?phone=573143757171" class="whatsapp-button">
-            <img src="../Iconos/whatsapp.jpg" alt="WhatsApp" />
+            <img src="{% static 'Iconos/whatsapp.jpg' %}" alt=" " />
         </a>
         {% endblock %}
 
