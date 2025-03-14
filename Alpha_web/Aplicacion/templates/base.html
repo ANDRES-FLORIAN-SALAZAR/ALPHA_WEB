@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ALPHA WEB</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/Main.css' %}">
-    
-</head>
+    <link rel="stylesheet" href="{% static 'css/Main2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Main3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Main4.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Main5.css' %}">
 
-{% block content %}
-        <div class="navbar">
-            <a href="{% url 'home' %}">home</a>
-            <a href="{% url 'Planes' %}">Nuestros Planes</a>
-            <a href="{% url 'Registro' %}">Regístrate</a>
-            <a href="{% url 'Inicio_Sesión' %}">Iniciar Sesión</a>
-            <a href="{% url 'Contraseñas' %}">Contraseñas</a>
-            
-            <div class="search-container">
-                <form action="/search" method="get">
-                    <input type="text" placeholder="Buscar..." name="search">
-                    <button type="submit">Buscar</button>
-                </form>
-            </div>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'Planes' %}">Nuestros Planes</a>
+        <a href="{% url 'Registro' %}">Regístrate</a>
+        <a href="{% url 'Inicio_Sesión' %}">Iniciar Sesión</a>
+        <a href="{% url 'Contraseñas' %}">Contraseñas</a>
+        
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Buscar..." name="search">
+                <button type="submit">Buscar</button>
+            </form>
         </div>
     </div>
+    </div>
+    
+{% block content %}{% endblock %}
 
     <footer class="footer">
         <hr>
@@ -83,7 +87,6 @@
             <a href="#popup5">Sus opciones de privacidad</a>
         </div>
     </footer>
-    {% endblock %}
     <script src="" async defer></script>
 </body>
 </html>
