@@ -134,9 +134,9 @@ h4 {
 }
 
 video {
-    width: 100%;
-    height: 720px;
-    background-color: transparent;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    height: 480px;
 }
 
 .whatsapp-button { 
@@ -154,11 +154,12 @@ video {
 .footer {
     background-color: #000000;
     color: #f8f7f7;
-    padding: 10px 0;
-    width: 100%;
+    padding: 10px 20px; 
+    width: calc(100% - 40px);
     text-align: center;
     position: relative;
     bottom: 0;
+    margin: 0 20px;
 }
 
 .footer-container {
