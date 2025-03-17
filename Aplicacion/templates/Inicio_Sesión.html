@@ -3,24 +3,12 @@
 
 {% block content%}
 
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/Main4.css' %}">
-</head>
-
-<body>
-
     <center>
-        <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br>
+        <br><br><br><br><br> <br><br><br>
         <form action="/login" method="post">
             <fieldset>
                 <br><center><legend>INICIO DE SESIÓN</legend></center>
-                <img src="{% static 'Iconos/contraseña.jpg' %}" alt="contraseña" class="imagen">
+                <img src="{% static 'Iconos/contraseña.jpg' %}" alt="login" class="imagen">
                 <input type="text" name="username" placeholder="Usuario" required>
                 <input type="password" name="contraseña" placeholder="Contraseña" required>
                 <input type="button" value="Inicio Sesión" onclick="window.location.href='Planes.html'">
@@ -29,7 +17,11 @@
         </form>
     </center>
     
-    <br><br><br><br><br>
+    <br><br><br>
+
+{% endblock %}
+
 </body>
 </html>
-{% endblock %}
+
+

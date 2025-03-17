@@ -3,8 +3,8 @@
 {% load static %}
 
 {% block content%}
-<body>
 
+<br><br><br><br><br><br><br><br><br><br><br><br>
     <script>
         function crearNumero() {
             return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
@@ -77,6 +77,8 @@
             document.querySelector('input[name="char_length"]').addEventListener('input', actualizarCampos);
         });
     </script>
+
+    <center>
         <form action="javascript:void(0);" onsubmit="generarContraseña()">
         <fieldset>
             <legend>Crear Contraseña</legend>
@@ -92,7 +94,10 @@
             <input type="text" name="contraseña" placeholder="su contraseña es: ">
         </fieldset>
     </form>
-</center><br><br><br>
+</center><br><br>
+
+{% endblock %}
+
 </body>
 </html>
-{% endblock %}
+
