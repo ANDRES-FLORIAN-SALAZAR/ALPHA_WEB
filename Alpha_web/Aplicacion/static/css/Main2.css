@@ -51,8 +51,8 @@
     color: #000000;
 }
 
-body {
-    background-image: url("../Imagenes/Fondo3.jpg");
+.StylePlan {
+    background-image: url("../img/Fondo3.jpg");
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
