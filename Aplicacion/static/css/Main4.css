@@ -51,11 +51,11 @@
     color: #000000;
 }
 
-body {
+.StyleInicio_Sesión {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #f8f7f7;
-    background-image: url("../Imagenes/Aleatorio.jpg");
+    background-image: url("../img/Aleatorio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
