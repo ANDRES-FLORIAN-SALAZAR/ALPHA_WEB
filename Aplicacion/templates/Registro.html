@@ -1,35 +1,51 @@
-{% extends "base.html"%}
+{% extends "base.html" %}
 {% load static %}
-{% block content%}
+{% block content %}
 
 <div class="StyleRegistro">
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <form action="/submit" method="post">
+    <form action="/inicio_sesion" method="post">
+        {% csrf_token %}
         <fieldset>
-            <legend>INFORMACIÓN BÁSICA</legend>
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="text" name="apellido" placeholder="Apellido" required>
-            <input type="number" name="edad" placeholder="Edad" required>
+            <legend>TIPO DE REGISTRO</legend>
+            <label for="tipo_registro">Seleccione el tipo de registro:</label>
+            <select id="tipo_registro" name="tipo_registro" required onchange="mostrarCampos()">
+                <option value="">Seleccione...</option>
+                <option value="natural">Persona Natural</option>
+                <option value="empresa">Empresa</option>
+            </select>
+        </fieldset>
+
+        <fieldset id="campos_natural" style="display:none;">
+            <legend>INFORMACIÓN PERSONAL</legend>
+            <input type="text" name="nombre_completo" placeholder="Nombre Completo" required>
+            <input type="number" name="edad" placeholder="Edad">
+            <input type="number" name="celular" placeholder="Celular">
             <label for="genero">Género</label>
-            <select id="genero" name="genero" required>
+            <select id="genero" name="genero">
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
             </select>
         </fieldset>
 
-        <fieldset>
-            <legend>INFORMACIÓN DE CONTACTO</legend>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="telefono" placeholder="Teléfono" required>
-            <input type="file">
+        <fieldset id="campos_empresa" style="display:none;">
+            <legend>INFORMACIÓN DE LA EMPRESA</legend>
+            <input type="text" name="nombre_empresa" placeholder="Nombre de la Empresa" required>
+            <input type="text" name="nit" placeholder="NIT" required>
+            <input type="email" name="email_empresa" placeholder="Email de la Empresa" required>
         </fieldset>
 
-        <br><input type="submit" value="Enviar Ahora">
+        <input type="submit" value="Enviar Ahora">
     </form>
-    </center><br><br>
+
+</div>
+
+<script>
+    function mostrarCampos() {
+        var tipoRegistro = document.getElementById("tipo_registro").value;
+        document.getElementById("campos_natural").style.display = (tipoRegistro === "natural") ? "block" : "none";
+        document.getElementById("campos_empresa").style.display = (tipoRegistro === "empresa") ? "block" : "none";
+    }
+</script>
 
 {% endblock %}
-
-</body>
-</html>

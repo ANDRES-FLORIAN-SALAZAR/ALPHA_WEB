@@ -6,6 +6,7 @@
     top: 0;
     width: 100%;
     z-index: 1000; /* sobreposicionar en toda la pagina */
+    padding: 5px 0; /* Reducir el padding vertical */
 }
 
 .navbar a {
@@ -13,33 +14,41 @@
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 20px;
+    padding: 8px 12px; /* Reducir el padding de los enlaces */
     text-decoration: none;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
 }
 
 .navbar a:hover {
     background-color: #ddd;
-    color:  #000000;
+    color: #000000;
+}
+
+.navbar-brand img {
+    height: 40px; /* Ajustar el tamaño del logo */
+    padding: 5px; /* Espaciado alrededor del logo */
 }
 
 .search-container {
     float: right;
+    margin-right: 10px; /* Ajustar el margen derecho */
 }
 
 .search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+    padding: 6px; /* Reducir el padding del campo de búsqueda */
+    margin-top: 6px;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
     border: none;
+    width: 150px; /* Ajustar el ancho del campo de búsqueda */
 }
 
 .search-container button {
     float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 10px;
+    padding: 6px 10px; /* Reducir el padding del botón */
+    margin-top: 6px;
+    margin-right: 5px; /* Reducir el margen derecho */
     background: #333;
-    font-size: 17px;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
     border: none;
     cursor: pointer;
     color: #ffffff;
@@ -49,6 +58,7 @@
     background: #ddd;
     color: #000000;
 }
+
 
 .StyleHome {
     background-image: url("../img/Fondo.jpg");
