@@ -81,3 +81,14 @@ p {
     right: 80px; 
     z-index: 100; 
 } 
+
+.btn-registro {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn-registro input[type="button"] {
+    width: 100%;
+    cursor: pointer;
+}

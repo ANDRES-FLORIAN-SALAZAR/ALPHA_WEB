@@ -3,8 +3,17 @@
 {% block content %}
 
 <div class="StyleRegistro">
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
-    <form action="/inicio_sesion" method="post">
+    <form action="{% url 'Registro' %}" method="POST">
         {% csrf_token %}
         <fieldset>
             <legend>TIPO DE REGISTRO</legend>
@@ -19,10 +28,13 @@
         <fieldset id="campos_natural" style="display:none;">
             <legend>INFORMACIÓN PERSONAL</legend>
             <input type="text" name="nombre_completo" placeholder="Nombre Completo" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
             <input type="number" name="edad" placeholder="Edad">
-            <input type="number" name="celular" placeholder="Celular">
+            <input type="tel" name="celular" placeholder="Celular">
             <label for="genero">Género</label>
             <select id="genero" name="genero">
+                <option value="">Seleccione...</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
             </select>
@@ -33,11 +45,12 @@
             <input type="text" name="nombre_empresa" placeholder="Nombre de la Empresa" required>
             <input type="text" name="nit" placeholder="NIT" required>
             <input type="email" name="email_empresa" placeholder="Email de la Empresa" required>
+            <input type="password" name="contraseña_empresa" placeholder="Contraseña" required>
         </fieldset>
 
-        <input type="submit" value="Enviar Ahora">
+        <button type="submit">Registrarse</button>
+        <p>¿Ya tienes una cuenta? <a href="{% url 'Inicio_Sesión' %}">Inicia sesión aquí</a></p>
     </form>
-
 </div>
 
 <script>

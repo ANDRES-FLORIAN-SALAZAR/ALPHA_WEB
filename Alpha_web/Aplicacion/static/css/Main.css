@@ -7,10 +7,18 @@
     width: 100%;
     z-index: 1000; /* sobreposicionar en toda la pagina */
     padding: 5px 0; /* Reducir el padding vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: #ffffff;
     text-align: center;
@@ -30,28 +38,89 @@
 }
 
 .search-container {
-    float: right;
-    margin-right: 10px; /* Ajustar el margen derecho */
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .search-container input[type=text] {
     padding: 6px; /* Reducir el padding del campo de búsqueda */
-    margin-top: 6px;
     font-size: 14px; /* Reducir el tamaño de la fuente */
     border: none;
     width: 150px; /* Ajustar el ancho del campo de búsqueda */
 }
 
 .search-container button {
-    float: right;
     padding: 6px 10px; /* Reducir el padding del botón */
-    margin-top: 6px;
-    margin-right: 5px; /* Reducir el margen derecho */
     background: #333;
     font-size: 14px; /* Reducir el tamaño de la fuente */
     border: none;
     cursor: pointer;
     color: #ffffff;
+    margin-left: 5px;
+}
+
+.search-container button:hover {
+    background: #ddd;
+    color: #000000;
+}
+
+/* Estilos para mensajes */
+.messages {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.alert {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgba(46, 153, 82, 0.7);
+    color: white;
+}
+
+.alert-error, .alert-danger {
+    background-color: rgba(233, 13, 13, 0.7);
+    color: white;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        width: 100%;
+        justify-content: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .search-container input[type=text] {
+        width: 70%;
+    }
+}
+
+.search-container button {
+    padding: 6px 10px; /* Reducir el padding del botón */
+    background: #333;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 5px;
 }
 
 .search-container button:hover {
@@ -169,7 +238,6 @@ video {
     text-align: center;
     position: relative;
     bottom: 0;
-    margin: 0 20px;
 }
 
 .footer-container {
@@ -178,8 +246,7 @@ video {
     align-items: flex-start;
     justify-content: space-between;
     max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    padding: 0px 20px;
 }
 
 .footer-column {
@@ -249,14 +316,60 @@ video {
     text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+.main-content {
+    min-height: 300px; /* Asegura que haya espacio para el contenido */
+}
+
+.imagen-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-registro {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn-registro input[type="button"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .search-container {
+        width: 100%;
+        justify-content: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    
+    .search-container input[type=text] {
+        width: 70%;
+    }
+    
     .footer-container {
-        flex-direction: row;
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-column {
-        width: 30%;
-        margin: 0 10px; 
+        width: 100%;
+        margin: 10px 0;
+        align-items: center;
     }
 }
+
