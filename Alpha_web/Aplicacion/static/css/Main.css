@@ -170,13 +170,13 @@ h4 {
 
 video {
     width: 100%;
-    max-width: 640px; /* Ajusta el ancho máximo del video */
-    margin: 0 auto; /* Centra el video horizontalmente */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    background-color: #000; /* Fondo negro para el video */
-    padding: 10px; /* Espaciado interno alrededor del video */
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
-    border-radius: 8px; /* Bordes redondeados */
+    max-width: 640px; 
+    margin: 0 auto;
+    height: auto;
+    background-color: #000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .whatsapp-button { 
