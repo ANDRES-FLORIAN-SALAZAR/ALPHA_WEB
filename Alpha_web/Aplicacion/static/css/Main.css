@@ -3,72 +3,95 @@
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 2px 0; /* Reduce el padding para hacerla más compacta */
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; /* Cambio a columna para la estructura de dos filas */
+    box-sizing: border-box;
+    z-index: 1000;
+    font-family: Arial, sans-serif; /* Estilo de letra similar */
+}
+
+.navbar-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand span:first-child {
+    color: #fff;
+}
+
+.navbar-brand span:last-child {
+    color: #ccc; /* Color más claro para "Cristiana" */
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-links a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+
+.auth-links a:hover {
+    background-color: #333;
+}
+
+.navbar-bottom {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-links {
     display: flex;
-    gap: 5px; /* Reduce el espacio entre enlaces */
+    gap: 20px;
 }
 
-.navbar a {
+.nav-links a {
     color: #fff;
-    padding: 4px 8px; /* Reduce el padding para enlaces más pequeños */
+    padding: 5px 0;
     text-decoration: none;
-    font-size: 12px; /* Reduce el tamaño de la fuente */
-    border-radius: 3px;
-    transition: background 0.2s;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.2s;
 }
 
-.navbar a:hover {
-    background-color: #333;
-    color: #fff;
+.nav-links a:hover {
+    color: #ccc;
 }
 
-.navbar-brand img {
-    height: 30px; /* Reduce el tamaño del logo */
-    object-fit: contain;
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    max-width: 200px; /* Limita el ancho del contenedor */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten si es necesario */
+    display: none;
 }
-
-.search-container input[type="text"] {
-    padding: 4px 6px; /* Reduce el padding */
-    font-size: 12px; /* Reduce el tamaño de la fuente */
-    border: 1px solid #444;
-    border-radius: 3px;
-    width: 100%; /* Ajusta el ancho al contenedor */
-    background: #222;
-    color: #fff;
-    box-sizing: border-box;
-}
-
-.search-container button {
-    padding: 4px 6px; /* Reduce el padding del botón */
-    background: #333;
-    font-size: 12px; /* Reduce el tamaño de la fuente */
-    border: none;
-    cursor: pointer;
-    color: #ffffff;
-    margin-top: 5px; /* Añade margen superior para separar del input */
-    border-radius: 3px;
-    transition: background 0.2s;
-}
-
-.search-container button:hover {
-    background: #555;
-    color: #fff;
-}
-
 .StyleHome {
     background-image: url("../img/Fondo.jpg");
     background-size: cover;
