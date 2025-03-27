@@ -1,16 +1,20 @@
 .StyleRegistro {
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f8f7f7;
     background-image: url("../img/Registro.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden; /* Eliminate horizontal scrollbar */
+    width: 100%; /* Ensure full width */
 }
 
 h2,.cont{
@@ -52,15 +56,6 @@ p {
     color: #ffffff; 
     margin-left: 80px;
     text-align:justify;
-}
-
-form {
-    background-color: #000000;
-    padding: 10px 10px;
-    max-width: 600px;
-    width: 100%;
-    border-style: double;
-    margin-top: 50px;
 }
 
 input, textarea, select {

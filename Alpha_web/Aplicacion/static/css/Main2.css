@@ -1,11 +1,25 @@
 .StylePlan {
     background-image: url("../img/Fondo3.jpg");
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 50px;
-    margin: auto;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden; /* Eliminate horizontal scrollbar */
+    width: 100%; /* Ensure full width */
+}
+
+body {
+    margin: 0; /* Remove default margin to avoid scrollbars */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .items{
